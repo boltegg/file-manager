@@ -12,7 +12,7 @@ class FileManager
 
         } else {
 
-            $dirPath = explode('/', $path);
+            $dirPath = explode(DIRECTORY_SEPARATOR, $path);
             $fileName = array_pop($dirPath);
 
             $this->createDir($dirPath);

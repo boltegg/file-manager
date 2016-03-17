@@ -10,7 +10,9 @@
 include(__DIR__ . '\src\FileManager.php');
 $fileManager = new \FileManager();
 
-$path = 'C:/hello/test.txt';
+$path = '/home/username/somedir/file.txt';
+// or
+// $path = 'C:\hello\test.txt';
 $content = 'blablabla';
 
 $result = $fileManager->write($path, $content);
